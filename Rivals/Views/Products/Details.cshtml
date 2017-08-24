@@ -1,0 +1,58 @@
+﻿@model Rivals.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoRenew)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AutoRenew)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubscriptionLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubscriptionLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
